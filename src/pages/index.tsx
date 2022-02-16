@@ -1,12 +1,37 @@
-import styled from 'styled-components'
-import { Header } from '../components'
+import Head from "next/head"
+import { 
+  Header, 
+  CoverSection, 
+  MainIntroSection, 
+  IntroSection, 
+  FeatureSection, 
+  ContentSection, 
+  BrowseSection, 
+  ManageSection, 
+  PoweredSection, 
+  FooterSection 
+} from '../components'
 
-const Container = styled.div``
-
-export default function Home() {
+const Home = () => {
   return (
-    <Container>
-      <Header />
-    </Container>
+    <>
+      <Head>
+        <title>Momento</title>
+      </Head>
+      <div>
+        <Header />
+        <CoverSection />
+        < MainIntroSection />
+        <IntroSection />
+        <FeatureSection />
+        <ContentSection />
+        <BrowseSection />
+        <ManageSection />
+        <PoweredSection />
+        <FooterSection />
+      </div>
+    </>
   )
 }
+
+export default Home

@@ -8,7 +8,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <Head>
-        <title>女性の転職は「ひるなびドットコム」</title>
+        <title>Momento</title>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0"

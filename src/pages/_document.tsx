@@ -53,10 +53,6 @@ export default class MyDocument extends Document {
             crossOrigin="anonymous"
           />
           <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
-            rel="stylesheet"
-          />
-          <link
             href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
             rel="stylesheet"
           />
@@ -64,33 +60,6 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Abel:wght@400;500;600;700&display=swap"
             rel="stylesheet"
             crossOrigin="anonymous"
-          />
-          <link
-            rel="preload"
-            href="/assets/fonts/yugothib.ttf"
-            as="font"
-            type="font/ttf"
-            crossOrigin="anonymous"
-          />
-          <link
-            rel="preload"
-            href="/assets/fonts/YuGothM.ttc"
-            as="font"
-            type="font/ttf"
-            crossOrigin="anonymous"
-          />
-          <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=AW-729004619"
-          />
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); 
-                gtag('config', 'AW-729004619');
-                  `,
-            }}
           />
         </Head>
         <body>

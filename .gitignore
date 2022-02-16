@@ -2,7 +2,6 @@
 .env
 **/node_modules/**
 yarn-error.log
-packages/*/package-lock.json
 .prettierrc
 build
 /public

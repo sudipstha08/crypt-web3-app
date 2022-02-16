@@ -5,37 +5,9 @@ export const GlobalStyles = createGlobalStyle`
   /** 
   * Initilize local fonts
   */
-  @font-face {
-    font-family: "yugothic";
-    src: url("/assets/fonts/yugothib.ttf");
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: "yugothic-regular";
-    src: url("/assets/fonts/YuGothM.ttc");
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-  }
-
-  html{
-    scroll-behavior: smooth;
-  }
-
   body {
     margin: 0px;
     padding: 0px;
-    font-family: "yugothic", sans-serif;
-  }
-
-  @font-face {
-    font-family: "Quickpen";
-    src: url("/assets/fonts/Quickpen.otf");
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
   }
 
   p, h1, h2, h3, h4 {
