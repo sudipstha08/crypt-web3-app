@@ -1,5 +1,4 @@
-## Next.js TS template :books:
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## momento clone
 
 ## Basic commands :wrench:
 
@@ -8,14 +7,15 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 | `yarn dev`     | run the development server |
 | `yarn install` | install dependencies       |
 | `yarn lint`	   | run linter                 |
-| `yarn remove`  | remove a package           |
+| `yarn remove`  | removes a package          |
 | `yarn build`   | build application          |
+| `yarn export`  | static export              |
 
 ## Tech Stacks :package:
 
 |     tech          |      description           |
 |-------------------|----------------------------|
 | `next`            | server side rendering      |
-| `axios`           | promise based HTTP client  |
-| `react-query`     | data fetching library      |
 | `eslint/prettier` | linting                    |
+| `firebase`        | hosting                    |
+| `firestore`       | DB                         |

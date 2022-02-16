@@ -1,15 +1,21 @@
-import type { AppProps } from 'next/app'
-import { QueryClient, QueryClientProvider } from 'react-query'
-import '../styles/globals.css'
+import { AppProps } from 'next/app'
+import 'antd/dist/antd.css'
+import React from 'react'
+import Head from 'next/head'
+import { GlobalStyles } from '../styles/global-styles'
 
-const queryClient = new QueryClient()
-
-function MyApp({ Component, pageProps }: AppProps) {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <>
-      <QueryClientProvider client={queryClient}>
-        <Component {...pageProps} />
-      </QueryClientProvider>
+      <Head>
+        <title>女性の転職は「ひるなびドットコム」</title>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+        />
+      </Head>
+      <GlobalStyles />
+      <Component {...pageProps} />
     </>
   )
 }

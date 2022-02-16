@@ -1,7 +1,8 @@
 /// <reference types="next" />
 /// <reference types="next/types/global" />
 
-// Allow SVG import as a module
+// <reference types="react-scripts" />
 declare module '*.svg' {
   export default JSX.IntrinsicElements.svg
 }
+
