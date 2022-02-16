@@ -19,14 +19,15 @@ const CardWrapper = styled.div`
     & .content {
       margin-top: 30px;
       & .intro-links{
-        padding: 0 15px;
+        padding: 0 10px;
         & img {
-          width: 75px;
-          height: 75px;
+          width: 85px;
+          height: 85px;
         }
       }
       & .solana {
         width: 400px;
+        height: 85px;
       }
     }
   }
