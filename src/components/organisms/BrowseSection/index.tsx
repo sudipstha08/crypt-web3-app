@@ -9,7 +9,8 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   & .image-wrapper{
-    flex: 30%;
+    flex: 35%;
+    padding-left: 30px;
     & img {
       max-width: 100%;
     }
