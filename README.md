@@ -11,6 +11,10 @@
 | `yarn build`   | build application          |
 | `yarn export`  | static export              |
 
+
+## How to get Started ? :runner:
+ - Install packages `yarn install`
+ - Run server `yarn dev`
 ## Tech Stacks :package:
 
 |     tech          |      description           |
@@ -19,3 +23,5 @@
 | `eslint/prettier` | linting                    |
 | `firebase`        | hosting                    |
 | `firestore`       | DB                         |
+
+Happy coding :v:
