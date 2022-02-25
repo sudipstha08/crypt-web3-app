@@ -3,6 +3,7 @@ import 'antd/dist/antd.css'
 import React from 'react'
 import Head from 'next/head'
 import { GlobalStyles } from '../styles/global-styles'
+import '../styles/style.css'
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (

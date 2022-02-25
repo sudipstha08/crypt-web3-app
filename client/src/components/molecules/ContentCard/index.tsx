@@ -12,7 +12,7 @@ const Container = styled.div`
   }
   & .title {
     font-weight: 48px;
-    font-family: 'Oswald',sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 55px;
   }
   & .desp {

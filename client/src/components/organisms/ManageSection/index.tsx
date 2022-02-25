@@ -9,7 +9,7 @@ const Container = styled.div`
   & .contents {
     flex: 52%;
     & .title {
-      font-family: 'Oswald',sans-serif;
+      font-family: 'Oswald', sans-serif;
       font-size: 40px;
       font-weight: 600;
     }
@@ -30,7 +30,7 @@ const Container = styled.div`
       margin-top: 20px;
       font-weight: bold;
       font-size: 1.1rem;
-      line-height: 2.1rem;  
+      line-height: 2.1rem;
     }
   }
   & .img-wrapper {
@@ -49,12 +49,16 @@ const ManageSection = () => {
           Easily Manage Your Content <br /> No Matter Where It Is
         </div>
         <div className="desp">
-          Set lifetime royalties with our SMART contracts and track your content.<br />
-          We will show you what it sells for and who owns it long after you’ve<br /> made it.
+          Set lifetime royalties with our SMART contracts and track your
+          content.
+          <br />
+          We will show you what it sells for and who owns it long after you’ve
+          <br /> made it.
         </div>
         <div className="seperator"></div>
         <div className="info">
-          Join our Creator Fund for exclusive tools and features that will supercharge your brand.
+          Join our Creator Fund for exclusive tools and features that will
+          supercharge your brand.
         </div>
       </div>
       <div className="img-wrapper">

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { ContentCard } from "../../molecules"
+import { ContentCard } from '../../molecules'
 
 const Container = styled.div`
   max-width: 1200px;
@@ -31,18 +31,22 @@ const ContentSection = () => {
   return (
     <Container>
       <div className="card-wrapper">
-        <ContentCard 
-          info={"Content as an"}
+        <ContentCard
+          info={'Content as an'}
           title="Asset Class"
-          desp={"We allow content creators to frictionlessly turn their content into NFTs on the blockchain."}
+          desp={
+            'We allow content creators to frictionlessly turn their content into NFTs on the blockchain.'
+          }
         />
-         <ContentCard 
-          info={"Candid moments that have"}
+        <ContentCard
+          info={'Candid moments that have'}
           title="Immediate value"
-          desp={"Track your favorite celebrities, influencers and tastemakers. Don't miss out on a new viral trend ever again."}
+          desp={
+            "Track your favorite celebrities, influencers and tastemakers. Don't miss out on a new viral trend ever again."
+          }
         />
       </div>
-      <div className='image-wrapper'>
+      <div className="image-wrapper">
         <div className="image">
           <img src="/imgs/content.png" alt="" width="300" height="auto" />
         </div>

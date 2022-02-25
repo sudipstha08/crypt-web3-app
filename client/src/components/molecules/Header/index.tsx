@@ -12,7 +12,6 @@ const HeaderWrapper = styled.div`
   align-items: center;
   & .logo {
     img {
-    
     }
   }
   & .right-section {
@@ -20,20 +19,20 @@ const HeaderWrapper = styled.div`
     align-items: center;
     & .faqs {
       font-size: 1.25rem;
-      color:rgb(64, 78, 237);
+      color: rgb(64, 78, 237);
       width: 125px;
       padding: 0 10px;
     }
     & .about {
       font-size: 1.25rem;
-      color:#404EED;
+      color: #404eed;
       width: 160px;
-      padding: 0 10px
+      padding: 0 10px;
     }
     & .discord {
       border-radius: 25px;
       height: 60px;
-      background: #404EED;
+      background: #404eed;
       width: 221px;
       display: flex;
       justify-content: center;
@@ -57,7 +56,16 @@ const HeaderWrapper = styled.div`
         animation-play-state: running;
       }
       button {
-        background: linear-gradient(90deg, #e454aa, #9651c7, #c454b6, #6d4cd7, #c454b6, #9651c7, #e454aa);
+        background: linear-gradient(
+          90deg,
+          #e454aa,
+          #9651c7,
+          #c454b6,
+          #6d4cd7,
+          #c454b6,
+          #9651c7,
+          #e454aa
+        );
         animation: gradientBackgroundAnimation 72s linear infinite;
         background-size: 1200% 400%;
         overflow: hidden;
@@ -93,9 +101,7 @@ const Header = () => {
             <img src="/imgs/discord.png" alt="discord" />
           </div>
           <div className="nav-item feedback">
-            <button>
-              Join the Movement
-            </button> 
+            <button>Join the Movement</button>
           </div>
         </div>
       </HeaderWrapper>

@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from "styled-components"
+import styled from 'styled-components'
 
 const Container = styled.div`
   max-width: 1200px;
@@ -32,10 +32,10 @@ const CoverSection = () => {
   return (
     <Container>
       <div>
-<video width="920" autoPlay muted playsInline loop>
-        <source src="https://momentonft.com/img/cover.mp4" />
-      </video>
-      <div className="video-overlay" />
+        <video width="920" autoPlay muted playsInline loop>
+          <source src="https://momentonft.com/img/cover.mp4" />
+        </video>
+        <div className="video-overlay" />
       </div>
     </Container>
   )

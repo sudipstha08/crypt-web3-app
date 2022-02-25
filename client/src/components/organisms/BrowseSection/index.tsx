@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from "styled-components"
+import styled from 'styled-components'
 
 const Container = styled.div`
   max-width: 1200px;
@@ -8,7 +8,7 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  & .image-wrapper{
+  & .image-wrapper {
     flex: 35%;
     padding-left: 30px;
     & img {
@@ -19,7 +19,7 @@ const Container = styled.div`
     flex: 50%;
     padding-left: 10%;
     & .title {
-      font-family: 'Oswald',sans-serif;
+      font-family: 'Oswald', sans-serif;
       font-size: 2.4rem;
       font-weight: 600;
     }
@@ -43,7 +43,9 @@ const BrowseSection = () => {
           Browse, Search & Purchase <br /> Videos You Are Interested In
         </div>
         <div className="desp">
-          Browse content from our creative users and purchase the ones you <br />love.
+          Browse content from our creative users and purchase the ones you{' '}
+          <br />
+          love.
         </div>
       </div>
     </Container>

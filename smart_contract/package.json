@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "eslint": "^8.9.0",
+    "lint-staged": "^12.3.4",
+    "pre-commit": "^1.2.2",
+    "prettier": "^2.5.1",
+    "stylelint-config-recommended": "^7.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21"
+  }
+}

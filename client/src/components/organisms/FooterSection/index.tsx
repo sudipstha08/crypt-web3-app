@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from "styled-components"
+import styled from 'styled-components'
 
 const Container = styled.div`
   display: flex;
@@ -45,14 +45,16 @@ const FooterSection = () => {
       <div className="logo">
         <img src="/imgs/logo-vertical.svg" alt="logo" />
       </div>
-      <div className="text">OWN THE MOMENTS THAT <span>MATTER</span></div>
+      <div className="text">
+        OWN THE MOMENTS THAT <span>MATTER</span>
+      </div>
       <div className="seperator"></div>
       <div className="links">
         <a href="">Privacy Policy</a>
-        <a href="">Terms of  Service</a>
+        <a href="">Terms of Service</a>
       </div>
       <div className="copyright">
-        Copyright © 2021 Momento NFT. All rights reserved. 
+        Copyright © 2021 Momento NFT. All rights reserved.
       </div>
     </Container>
   )
