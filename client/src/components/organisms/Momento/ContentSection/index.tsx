@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { ContentCard } from '../../molecules'
+import { ContentCard } from '../../../molecules'
 
 const Container = styled.div`
   max-width: 1200px;

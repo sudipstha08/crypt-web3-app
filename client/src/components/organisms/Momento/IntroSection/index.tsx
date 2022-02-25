@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { IntroCard } from '../../molecules'
+import { IntroCard } from '../../../molecules'
 
 const Container = styled.div`
   display: flex;
