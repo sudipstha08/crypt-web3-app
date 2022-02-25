@@ -18,11 +18,14 @@
  - Run server `yarn dev`
 ## Tech Stacks :package:
 
-|     tech          |      description           |
+|     Tech          |      Description           |
 |-------------------|----------------------------|
 | `next`            | server side rendering      |
 | `eslint/prettier` | linting                    |
 | `firebase`        | hosting                    |
 | `firestore`       | DB                         |
+
+## commands
+1. npx tailwindcss init -p -> creates tailwind css and post css config file
 
 Happy coding :v:

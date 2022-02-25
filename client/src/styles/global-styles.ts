@@ -1,7 +1,9 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyles = createGlobalStyle`
-
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
   /** 
   * Initilize local fonts
   */
