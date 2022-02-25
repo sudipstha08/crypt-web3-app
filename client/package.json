@@ -1,5 +1,5 @@
 {
-  "name": "momento-clone",
+  "name": "crypt",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -31,7 +31,9 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-query": "^3.16.0",
+    "react-reveal": "^1.2.2",
     "styled-components": "^5.3.3",
+    "web3": "^1.7.0",
     "yup": "^0.32.11"
   },
   "devDependencies": {
