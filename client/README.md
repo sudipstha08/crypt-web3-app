@@ -24,6 +24,8 @@
 | `eslint/prettier` | linting                    |
 | `firebase`        | hosting                    |
 | `firestore`       | DB                         |
+| `ethers`       |                        |
+| `react-icons`       |                       |
 
 ## commands
 1. npx tailwindcss init -p -> creates tailwind css and post css config file

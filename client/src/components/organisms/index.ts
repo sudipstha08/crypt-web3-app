@@ -1,1 +1,7 @@
 export * from './Momento'
+export { Footer } from './Footer'
+export { Services } from './Services'
+export { Transactions } from './Transactions'
+export { Welcome } from './Welcome'
+export { Loader } from './Loader'
+export { NavBar } from './NavBar'

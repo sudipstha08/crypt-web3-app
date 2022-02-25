@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /// <reference types="next" />
 /// <reference types="next/types/global" />
 
@@ -6,8 +7,7 @@
 //   export default JSX.IntrinsicElements.svg
 // }
 
-declare module "*.svg" {
-    import React from "react";
-    export default JSX.IntrinsicElements.svg;
-  }
-
+declare module '*.svg' {
+  import React from 'react'
+  export default JSX.IntrinsicElements.svg
+}

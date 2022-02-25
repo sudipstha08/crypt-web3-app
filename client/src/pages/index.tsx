@@ -1,15 +1,23 @@
 import Head from 'next/head'
-import {} from '../components'
+import { NavBar, Welcome, Services, Transactions, Footer } from '../components'
 
-const Home = () => {
+const HomePage = () => {
   return (
     <>
       <Head>
-        <title>Momento</title>
+        <title>Home | Crypt</title>
       </Head>
-      <div></div>
+      <section className="min-h-screen">
+        <div className="gradient-bg-welcome">
+          <NavBar />
+          <Welcome />
+        </div>
+        <Services />
+        <Transactions />
+        <Footer />
+      </section>
     </>
   )
 }
 
-export default Home
+export default HomePage
