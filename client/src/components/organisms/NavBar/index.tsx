@@ -24,9 +24,7 @@ const NavBar = () => {
           Login
         </li>
       </ul>
-      <div className="flex relative">
-        
-      </div>
+      <div className="flex relative"></div>
     </nav>
   )
 }
