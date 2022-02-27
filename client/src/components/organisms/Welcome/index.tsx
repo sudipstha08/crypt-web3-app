@@ -71,7 +71,10 @@ const Welcome = () => {
               </div>
             </div>
           </div>
-          <div className="p-5 sm:w-96 flex flex-col justify-start items-center blue-glassmorphism">
+          <div
+            className="p-5 sm:w-96 flex flex-col justify-start items-center blue-glassmorphism"
+            style={{ height: 300 }}
+          >
             <Input
               placeholder={'Address To'}
               name="addressTo"
@@ -100,8 +103,8 @@ const Welcome = () => {
               value=""
               handleChange={handleChange}
             />
-            <div className="h-[1px].w-full.bg-gray-400">
-              {true ? (
+            <div className="h-[1px] w-full bg-gray-400">
+              {false ? (
                 <Loader />
               ) : (
                 <div>
