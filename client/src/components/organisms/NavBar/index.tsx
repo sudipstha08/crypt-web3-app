@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { HiMenuAlt4 } from 'react-icons/hi'
 import { AiOutlineClose } from 'react-icons/ai'
 
@@ -7,6 +7,8 @@ const NavBarItem = ({ title, classProps }) => {
 }
 
 const NavBar = () => {
+  const [toggleMenu, setToggleMenu] = useState(false)
+
   return (
     <nav className="w-full flex md:justify-center justify-between items-center p-4">
       <div className="md:flex-[0.5] flex-initial justify-center items-center">
@@ -24,7 +26,35 @@ const NavBar = () => {
           Login
         </li>
       </ul>
-      <div className="flex relative"></div>
+      <div className="flex relative">
+        {toggleMenu ? (
+          <AiOutlineClose
+            style={{ fontSize: 28 }}
+            className="text-white md:hidden cursor-pointer"
+            onClick={() => setToggleMenu(false)}
+          />
+        ) : (
+          <HiMenuAlt4
+            fontSize={28}
+            className="text-white md:hidden cursor-pointer"
+            onClick={() => setToggleMenu(true)}
+          />
+        )}
+        {toggleMenu && (
+          <ul className="z-10 fixed top-0 -right-2 p-3 w-[70vw] h-screen shadow-2xl md:hidden list-none flex flex-col justify-start itms-end rounded-md blue-glassmorphism text-white animat3e-slide-in">
+            <li className="text-xl w-full my-2">
+              <AiOutlineClose onClick={() => setToggleMenu(false)} />
+            </li>
+            {['market', 'Exchange', 'Tutorials', 'Wallets'].map((item, idx) => (
+              <NavBarItem
+                key={item + idx}
+                title={item}
+                classProps="my-2 text-lg"
+              />
+            ))}
+          </ul>
+        )}
+      </div>
     </nav>
   )
 }
