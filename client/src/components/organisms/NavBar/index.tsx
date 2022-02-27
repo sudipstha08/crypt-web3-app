@@ -6,6 +6,8 @@ const NavBarItem = ({ title, classProps }) => {
   return <li className={`mx-4 cursor-pointer ${classProps}`}>{title}</li>
 }
 
+const navItems = ['Market', 'Exchange', 'Tutorials', 'Wallets']
+
 const NavBar = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
 
@@ -19,10 +21,10 @@ const NavBar = () => {
         />
       </div>
       <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
-        {['market', 'Exchange', 'Tutorials', 'Wallets'].map((item, idx) => (
+        {navItems.map((item, idx) => (
           <NavBarItem key={item + idx} title={item} classProps="" />
         ))}
-        <li className="bg- py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-##2546bd">
+        <li className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]">
           Login
         </li>
       </ul>
@@ -45,7 +47,7 @@ const NavBar = () => {
             <li className="text-xl w-full my-2">
               <AiOutlineClose onClick={() => setToggleMenu(false)} />
             </li>
-            {['market', 'Exchange', 'Tutorials', 'Wallets'].map((item, idx) => (
+            {navItems.map((item, idx) => (
               <NavBarItem
                 key={item + idx}
                 title={item}

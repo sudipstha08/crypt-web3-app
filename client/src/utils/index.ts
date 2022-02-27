@@ -1,1 +1,1 @@
-export const util = 'util'
+export { theme } from './theme'
