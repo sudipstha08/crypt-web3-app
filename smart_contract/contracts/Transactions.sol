@@ -33,14 +33,17 @@ contract Transactions {
     transactionCount += 1;
     // Push specific transaction in the transaction array
     transactions.push(TransferStruct(msg.sender, receiver, amount, message, block.timestamp, keyword));
+  
+    // Make transfer emitting this event
+    emit Transfer(msg.sender, receiver, amount, message, block.timestamp, keyword); 
   }
 
   function getAllTransactions() public view returns (TransferStruct[] memory){
-    //
+    return transactions;
   }
 
   function getTransactionCount() public view returns (uint256) {
-
+    return transactionCount;
   }
 }
 

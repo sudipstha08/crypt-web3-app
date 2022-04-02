@@ -8,6 +8,9 @@
 | `firestore`       | DB                         |
 | `tailwind css`    |                     |
 
+## Deploy steps
+1. 
+
 ## REFERENCES
 1. https://vitejs.dev/   (vite)
 2. https://www.freecodecamp.org/news/how-to-style-your-react-apps-with-less-code-using-tailwind-css-and-styled-components
