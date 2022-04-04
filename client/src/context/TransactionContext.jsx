@@ -12,7 +12,7 @@ export const TransactionContext = React.createContext()
 // the user has a connection to, and suggest the user sign messages and transactions.
 // You can use this API to detect the user of a web3 browser.
 
-const { ethereum } = window
+const { ethereum } = typeof window !== 'undefined' && window
 
 const getEthereumContract = () => {
   const provider = new ethers.providers.Web3Provider(ethereum)
@@ -28,6 +28,8 @@ const getEthereumContract = () => {
   console.log('transactionContract', transactionContract)
 }
 
+console.log('eth', ethereum)
+
 export const TransactionProvider = ({ children }) => {
   const [connectedAccount, setConnectedAccount] = useState('')
   const checkIfWalletIsConnected = async () => {
@@ -41,7 +43,7 @@ export const TransactionProvider = ({ children }) => {
     try {
       if (!ethereum) alert('Please install metamask')
       const accounts = await ethereum.request({
-        method: 'eth_request_Accounts',
+        method: 'eth_requestAccounts',
       })
       setConnectedAccount(accounts?.[0])
     } catch (error) {
