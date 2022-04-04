@@ -4,6 +4,7 @@ import React from 'react'
 import Head from 'next/head'
 import { GlobalStyles } from '../styles/global-styles'
 import '../styles/style.css'
+import { TransactionProvider } from '../context/TransactionContext'
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
@@ -16,7 +17,9 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         />
       </Head>
       <GlobalStyles />
-      <Component {...pageProps} />
+      <TransactionProvider>
+        <Component {...pageProps} />
+      </TransactionProvider>
     </>
   )
 }

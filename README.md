@@ -9,7 +9,8 @@
 | `tailwind css`    |                     |
 
 ## Deploy steps
-1. 
+1. npx hardhat run scripts/deploy.js --network ropsten
+  - Creates contract address and ABI 
 
 ## REFERENCES
 1. https://vitejs.dev/   (vite)
